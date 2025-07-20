@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        
+      }
+      body{
+        background-color: black;
+      }
+    </style>
+</head>
+<body>
+    <h1 class="text-2xl text-red-700 font-bold underline text-clifford flex justify-center items-center">
+      Danger Calculator
+    </h1>
+    <div class="flex justify-center items-center mt-8">
+        <div class="bg-gray-800 p-12 rounded-xl shadow-2xl w-96 max-w-lg">
+            <input type="text" id="display" class="w-full h-20 text-right text-white bg-gray-900 rounded-xl mb-8 p-6 border border-gray-700 text-2xl font-mono" placeholder="0">
+            <div class="grid grid-cols-4 gap-4">
+                <button class="bg-gray-700 text-white rounded-xl p-6 h-18 text-xl font-bold hover:bg-gray-500 transition-colors">7</button>
+                <button class="bg-gray-700 text-white rounded-xl p-6 h-18 text-xl font-bold hover:bg-gray-500 transition-colors">8</button>
+                <button class="bg-gray-700 text-white rounded-xl p-6 h-18 text-xl font-bold hover:bg-gray-500 transition-colors">9</button>
+                <button class="bg-red-700 text-white rounded-xl p-6 h-18 text-xl font-bold hover:bg-red-600 transition-colors">/</button>
+                <button class="bg-gray-700 text-white rounded-xl p-6 h-18 text-xl font-bold hover:bg-gray-500 transition-colors">4</button>
+                <button class="bg-gray-700 text-white rounded-xl p-6 h-18 text-xl font-bold hover:bg-gray-500 transition-colors">5</button>
+                <button class="bg-gray-700 text-white rounded-xl p-6 h-18 text-xl font-bold hover:bg-gray-500 transition-colors">6</button>
+                <button class="bg-red-700 text-white rounded-xl p-6 h-18 text-xl font-bold hover:bg-red-600 transition-colors">*</button>
+                <button class="bg-gray-700 text-white rounded-xl p-6 h-18 text-xl font-bold hover:bg-gray-500 transition-colors">1</button>
+                <button class="bg-gray-700 text-white rounded-xl p-6 h-18 text-xl font-bold hover:bg-gray-500 transition-colors">2</button>
+                <button class="bg-gray-700 text-white rounded-xl p-6 h-18 text-xl font-bold hover:bg-gray-500 transition-colors">3</button>
+                <button class="bg-red-700 text-white rounded-xl p-6 h-18 text-xl font-bold hover:bg-red-600 transition-colors">-</button>
+                <button class="bg-gray-700 text-white rounded-xl p-6 h-18 text-xl font-bold hover:bg-gray-500 transition-colors col-span-2">0</button>
+                <button class="bg-orange-600 text-white rounded-xl p-6 h-18 text-xl font-bold hover:bg-orange-500 transition-colors">.</button>
+                <button class="bg-red-700 text-white rounded-xl p-6 h-18 text-xl font-bold hover:bg-red-600 transition-colors">+</button>
+                <button class="bg-red-700 text-white rounded-xl p-6 h-18 text-xl font-bold hover:bg-red-600 transition-colors col-span-2">C</button>
+                <button class="bg-green-700 text-white rounded-xl p-6 h-18 text-xl font-bold hover:bg-green-600 transition-colors col-span-2">=</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer class="text-center text-gray-500 mt-4">
+        <p>Made with <span class="text-red-500">&hearts;</span> by <a href="https://github.com/mdhsaikats" class="text-red-500 hover:text-red-800">Saikat</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
